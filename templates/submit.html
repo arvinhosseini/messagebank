@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1 style="color: green; font-family: 'Roboto', sans-serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">{% block title %}<span class="protest-guerrilla-regular">Submit a Message</span>{% endblock %}</h1>
+{% endblock %}
+
+
+
+{% block content %}
+
+  <style>
+    /* Import Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+    /* Apply custom font */
+    .protest-guerrilla-regular {
+      font-family: "Protest Guerrilla", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    /* Set background color */
+    body {
+      background-color: blue;
+    }
+  </style>
+
+  <form method="post">
+      <label for="name" class="protest-guerrilla-regular">What's your name?</label>
+      <input name="name" id="name" class="protest-guerrilla-regular">
+      <label for="message" class="protest-guerrilla-regular">What is your message?</label>
+      <input type="text" name="message" id="message" class="protest-guerrilla-regular">
+      <input type="submit" value="Post Message" class="protest-guerrilla-regular">
+  </form>
+  {% if sec == True %}
+  <br>
+      <b>Message sent</b>
+  {% endif %}
+{% endblock %}

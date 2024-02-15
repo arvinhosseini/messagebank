@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} Message Bank</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            background-color: #192841; /* Dark blue background */
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            border-bottom: 2px solid gold;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: 28px;
+        }
+        p {
+            color: orange;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        p a {
+            color: gold;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        p a:hover {
+            color: lightgoldenrodyellow;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        ul li a {
+            color: gold;
+            font-size: 20px;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom-color 0.3s ease;
+        }
+        ul li a:hover {
+            border-bottom-color: gold;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h1>Welcome to the Message Bank!</h1>
+    <p>Hi! Welcome to my message bank. Please feel free to post a new message by clicking on the <a href="{{ url_for('submit') }}">Post Messages</a> link. You can also view some random messages from the bank by clicking <a href="{{ url_for('view') }}">View Messages</a>. Hope you enjoy!</p>
+    <ul>
+        <li><a href="{{ url_for('submit') }}">Post Messages</a></li>
+        <li><a href="{{ url_for('view') }}">View Messages</a></li>
+    </ul>
+</nav>    
+
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  {% block content %}{% endblock %}
+</section>
+
+</body>
+</html>
