@@ -3,7 +3,6 @@ import sqlite3
 import pandas as pd
 
 from flask import Flask, g, render_template, request
-from flask import redirect, url_for
 
 app = Flask(__name__)
 

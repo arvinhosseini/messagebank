@@ -1,0 +1,48 @@
+body {
+    background-color: #192841; /* Dark blue background */
+    font-family: Arial, sans-serif;
+}
+nav {
+    border-bottom: 2px solid gold;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 28px;
+}
+p {
+    color: orange;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+p a {
+    color: gold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+p a:hover {
+    color: lightgoldenrodyellow;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+ul li a {
+    color: gold;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+}
+ul li a:hover {
+    border-bottom-color: gold;
+}

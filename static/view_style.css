@@ -1,0 +1,40 @@
+        
+        /* Additional styles specific to this template */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #333; /* Darker gray container background */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+        }
+        h1 {
+            text-align: center;
+            color: #ff5722; /* Orange color */
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            font-size: 36px; /* Larger font size */
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .message {
+            background-color: #444; /* Dark gray message background */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s ease; /* Smooth transition */
+        }
+        .message:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Larger shadow on hover */
+            transform: translateY(-5px); /* Move up slightly on hover */
+        }
+        p {
+            color: #ccc; /* Light gray text */
+            font-size: 18px; /* Medium font size */
+            font-style: italic; /* Italic text */
+            margin: 0; /* Remove default margin */
+        }
